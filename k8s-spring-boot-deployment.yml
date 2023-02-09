@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: jhooq-springboot
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: jhooq-springboot
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: rahulwagh17/kubernetes:jhooq-k8s-springboot
+          image: mehranhanif007/kubernetes:jhooq-k8s-springboot
 
           resources:
             requests:
